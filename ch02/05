@@ -1,0 +1,23 @@
+
+#include "stdio.h"
+void br();
+void ic();
+int main(){
+    br();
+    putchar(',');
+    ic();
+    putchar('\n');
+    ic();
+    putchar('\n');
+    br();
+
+
+
+}
+void br(){
+    printf("Brazil,Russia");
+
+}
+void ic(){
+    printf("India,China");
+}
