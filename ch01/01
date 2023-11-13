@@ -1,0 +1,3 @@
+scanf(please input inch)
+transfer inch to cetermeter
+printf(cetermeter)
