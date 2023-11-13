@@ -1,0 +1,21 @@
+
+#include "stdio.h"
+void one_three(),two();
+
+
+int main(){
+    printf("starting now:\n");
+    one_three();
+    putchar('\n');
+    printf("done!");
+
+}
+void one_three(){
+    printf("one\n");
+    two();
+    putchar('\n');
+    printf("three");
+}
+void two(){
+    printf("two");
+}
