@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    printf("Enter your height(inch):");
+    float inch;
+    scanf("%f",&inch);
+    printf("height(centimeter):%.2f",inch*2.54);
+
+}
