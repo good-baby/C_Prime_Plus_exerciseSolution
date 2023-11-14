@@ -1,0 +1,10 @@
+
+#include "stdio.h"
+#include "limits.h"
+#include "float.h"
+
+int main(){
+    printf("int_max+1:%d\n",INT_MAX+1);
+    printf("float_max*2:%e\n",FLT_MAX*2);
+    printf("float_min/2:%f",FLT_MIN/2);
+}
