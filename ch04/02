@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "string.h"
+int main() {
+    printf("Enter your name and last name:");
+    char name[10],lastName[10];
+    scanf("%s%s",name,lastName);
+    printf("\"%s %s\"\n",name,lastName);//.打印名和姓,包括双引号
+    printf("%20c%s %s\"\n",'\"',name,lastName);//在宽度为20的字段右端打印名和姓,包括双引号
+    printf("\"%s %s%-20c\n",name,lastName,'\"');//在宽度为20的字段左端打印名和姓,包括双引号
+    printf("%*c%s %s\"\n", strlen(name)+ strlen(lastName)+4,'\"',name,lastName);//在比姓名宽度宽3的字段中打印名和姓
+
+
+
+
+}
