@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include "string.h"
+int main() {
+    printf("Enter height(inch) and name:");
+    float height;
+    char name[10],lastName[10];
+    scanf("%f %s%s",&height,name,lastName);
+    printf("%s,you are %.3f feet tall",lastName,height);
+
+
+}
