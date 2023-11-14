@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float pint,cup,ounce,spoon,teaspoon;
+    printf("Enter the number of cup:");
+    scanf("%f",&cup);
+    pint=cup/2;
+    ounce=cup*8;
+    spoon=ounce*2;
+    teaspoon=spoon*3;
+    printf("pint:%f\n"
+           "ounce:%f\n"
+           "spoon:%f\n"
+           "teaspoon:%f",
+           pint,ounce,spoon,teaspoon);
+
+
+
+}
