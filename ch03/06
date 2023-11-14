@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    float kuato;
+    printf("Enter kuato of water:");
+    scanf("%f",&kuato);
+    printf("the quantity of water molecule is:%Le",kuato*950/(3e-23));
+
+}
