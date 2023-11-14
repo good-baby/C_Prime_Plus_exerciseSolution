@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    short age;
+    long double age_second;
+    printf("Enter your age:");
+    scanf("%hd",&age);
+    age_second=age*3.156e7;
+    printf("%Le",age_second);
+
+}
