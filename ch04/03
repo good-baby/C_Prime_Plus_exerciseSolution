@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "string.h"
+int main() {
+    printf("Enter a float:");
+    float n;
+    scanf("%f",&n);
+    //以小数点记数法打印
+    printf("%.1f\n",n);
+    printf("%+.3f\n",n);
+    //以指数记数法打印
+
+    printf("%.1e\n",n);
+    printf("%.3E",n);
+
+
+
+
+}
