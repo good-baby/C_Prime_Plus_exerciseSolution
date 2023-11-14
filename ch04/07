@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "float.h"
+int main() {
+    double dbl=1.0/3.0;
+    float flt=1.0/3.0;
+    printf("%.6f %.6f\n"
+           "%.12f %.12f\n"
+           "%.16f %.16f\n",
+           flt,dbl,flt,dbl,flt,dbl);
+    printf("FLT_DIG:%d DBL_DIG:%d",FLT_DIG,DBL_DIG);
+
+
+
+
+}
