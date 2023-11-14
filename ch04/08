@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+#define GALLON_TO_LITER 3.785
+#define MILE_TO_KM 1.609
+
+int main() {
+    float mileage, fuelConsumption;
+
+    // 提示用户输入里程和消耗的汽油量
+    printf("请输入旅行里程（英里）：");
+    scanf("%f", &mileage);
+
+    printf("请输入消耗的汽油量（加仑）：");
+    scanf("%f", &fuelConsumption);
+
+    // 计算并显示每加仑汽油行驶的英里数
+    float milesPerGallon = mileage / fuelConsumption;
+    printf("每加仑汽油行驶的英里数为：%.1f\n", milesPerGallon);
+
+    // 转换为升/100公里
+    float litersPerKm = (fuelConsumption * GALLON_TO_LITER) / (mileage * MILE_TO_KM) * 100;
+    printf("单位是升/100公里的燃料消耗为：%.1f\n", litersPerKm);
+
+    return 0;
+}
