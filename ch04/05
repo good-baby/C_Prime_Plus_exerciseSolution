@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include "string.h"
+int main() {
+    float Mb_s,MB;
+    printf("Enter download speed(Mb/s) and file size(MB):");
+    scanf("%f %f",&Mb_s,&MB);
+    float time=MB/(Mb_s/8);
+    printf("At %.2f megabits per second, a file of %.2f megabytes "
+           "downloads in %.2f seconds",Mb_s,MB,time);
+
+
+}
