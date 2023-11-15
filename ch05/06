@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+    int count,sum;
+    count=sum=0;
+    int days;
+    printf("ENter days:");
+    scanf("%d",&days);
+    while (count++<days)
+        sum+=count*count;
+    printf("sum=%d\n",sum);
+
+
+
+
+}
