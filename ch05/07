@@ -1,0 +1,15 @@
+#include <stdio.h>
+double cube(double );
+int main(void) {
+    printf("Enter a number:");
+    double n;
+    scanf("%lf",&n);
+    printf("cubed:%f",cube(n));
+
+
+
+
+}
+double cube(double n){
+    return n*n*n;
+}
