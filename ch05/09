@@ -1,0 +1,25 @@
+#include <stdio.h>
+void Temperatures(double );
+int main(void) {
+    printf("Enter a Fahrenheit temperature:");
+    double fahr;
+    while (scanf("%lf",&fahr)){
+        Temperatures(fahr);
+        printf("Enter next Fahrenheit temperature(enter q to quit):");
+        
+
+    }
+    printf("Done");
+
+
+
+}
+void Temperatures(double fahr){
+    const double cel=5.0/9.0*(fahr-32.0);
+    const double kel=cel+273.16;
+    printf("Fahrenheit temperature:%.2fF\n"
+           "Celsius temperature:%.2fC\n"
+           "Kelvin temperature:%.2fK\n",
+           fahr,cel,kel
+           );
+}
