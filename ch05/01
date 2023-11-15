@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "float.h"
+#define SEC_PER_MIN 60
+int main() {
+    printf("Enter time(minutes):");
+    float minutes;
+    scanf("%f",&minutes);
+    while (minutes>0){
+        printf("time(seconds):%.2f\n"
+               "time(hours):%.21f\n",
+               minutes*SEC_PER_MIN,minutes/60);
+        printf("Enter time(minutes):");
+        scanf("%f",&minutes);
+    }
+    printf("done!");
+
+
+}
