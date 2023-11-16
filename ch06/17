@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    double chuckieMoney = 1000000.0; // Chuckie的奖金金额
+    double interestRate = 0.08; // 年利率
+    double withdrawalAmount = 100000.0; // 每年取出的金额
+    int years = 0; // 经过的年数
+
+    while (chuckieMoney > 0) {
+        chuckieMoney += chuckieMoney * interestRate; // 计算年利息
+        chuckieMoney -= withdrawalAmount; // 取出每年的金额
+        years++;
+    }
+
+    printf("经过 %d 年，Chuckie会取完账户的钱\n", years);
+
+    return 0;
+}
