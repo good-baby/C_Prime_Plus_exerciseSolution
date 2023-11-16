@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    printf("Enter term number");
+    int term;
+    scanf("%d",&term);
+    while (term){
+        float sum1,sum2;
+        sum1=sum2=0;
+        for (int i = 0; i < term; ++i) {
+            sum1+=1.0/(i+1.0);
+        }
+        for (int i = 0; i < term; ++i) {
+            int  n;
+            if(i%2)
+                n=-1;
+            else
+                n=1;
+            sum2+=n*1.0/(i+1.0);
+        }
+
+        printf("\"1.0 + 1.0/2.0 + 1.0/3.0 + 1.0/4.0 + ...\" after %d term, result is %f\n",
+               term,sum1);
+        printf("\"1.0 - 1.0/2.0 + 1.0/3.0 - 1.0/4.0 + ... \" after %d term, result is %f\n",
+               term,sum2);
+        printf("Enter next term number");
+        scanf("%d",&term);
+
+
+    }
+}
