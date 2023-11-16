@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+#define DUNBARS_NUMBER 150
+
+int main() {
+    int friends = 5; // 初始朋友数量
+    int week = 1; // 初始周数
+
+    while (friends <= DUNBARS_NUMBER) {
+        printf("第%d周的朋友数量：%d\n", week, friends);
+        friends = (friends - week) * 2; // 计算下一周的朋友数量
+        week++;
+    }
+
+    printf("超过了邓巴数（%d）\n", DUNBARS_NUMBER);
+
+    return 0;
+}
