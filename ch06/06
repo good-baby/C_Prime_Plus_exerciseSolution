@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int LOWER_LIM,UPPER_LIM;
+    printf("Enter lower limit(integer):");
+    scanf("%d",&LOWER_LIM);
+    printf("Enter upper limit(integer):");
+    scanf("%d",&UPPER_LIM);
+    for (int i = 0; i < UPPER_LIM - LOWER_LIM + 1; ++i) {
+        printf("%-3d %-3d %-5d\n",LOWER_LIM+i,(LOWER_LIM+i)*(LOWER_LIM+i),
+               (LOWER_LIM+i)*(LOWER_LIM+i)*(LOWER_LIM+i));
+
+    }
+
+
+}
