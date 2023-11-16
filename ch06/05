@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    printf("Enter an uppercase letter");
+    char letter;
+    scanf("%c",&letter);
+    for (int i = 0; i < letter - 'A' + 1; ++i) {
+        for (int j = 0; j < i+1; ++j) {
+            putchar('A'+j);
+        }
+        for (int j = 0; j < i; ++j) {
+            putchar('A'+i-j-1);
+        }
+        putchar('\n');
+    }
+}
