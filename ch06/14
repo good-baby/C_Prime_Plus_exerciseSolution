@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    double array1[8]; // 第一个数组，用于存储用户输入的值
+    double array2[8]; // 第二个数组，存储累积和
+
+    // 提示用户为第一个数组输入8个值
+    printf("请输入8个值:\n");
+    for (int i = 0; i < 8; i++) {
+        scanf("%lf", &array1[i]);
+    }
+
+    // 计算第二个数组的累积和
+    array2[0] = array1[0]; // 第一个元素与第一个数组相同
+    for (int i = 1; i < 8; i++) {
+        array2[i] = array2[i-1] + array1[i]; // 第二个数组的元素等于前一个元素加上第一个数组对应的元素
+    }
+
+    // 显示两个数组的内容
+    printf("第一个数组的内容：");
+    for (int i = 0; i < 8; i++) {
+        printf("%.2lf ", array1[i]);
+    }
+
+    printf("\n第二个数组的内容：");
+    for (int i = 0; i < 8; i++) {
+        printf("%.2lf ", array2[i]);
+    }
+
+    return 0;
+}
