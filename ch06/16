@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    double daphneInvestment = 100.0; // Daphne的投资额
+    double deirdreInvestment = 100.0; // Deirdre的投资额
+    double daphneInterestRate = 0.10; // Daphne的利率
+    double deirdreInterestRate = 0.05; // Deirdre的利率
+    int years = 0; // 经过的年数
+
+    while (deirdreInvestment <= daphneInvestment) {
+        daphneInvestment += daphneInvestment * daphneInterestRate; // Daphne每年获得的利息
+        deirdreInvestment += deirdreInvestment * deirdreInterestRate; // Deirdre每年获得的利息
+        years++;
+    }
+
+    printf("经过 %d 年，Deirdre的投资额超过了Daphne\n", years);
+    printf("Daphne的投资额为：$%.2lf\n", daphneInvestment);
+    printf("Deirdre的投资额为：$%.2lf\n", deirdreInvestment);
+
+    return 0;
+}
