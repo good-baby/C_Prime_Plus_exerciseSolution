@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include "string.h"
+int main(){
+    float a,b;
+
+    printf("enter two float:");
+    scanf("%f %f",&a,&b);
+
+    do {
+        printf("outcome:%f\n",(a-b)/(a*b));
+        printf("enter two float:");
+    } while ( scanf("%f %f",&a,&b));
+    printf("done");
+
+}
