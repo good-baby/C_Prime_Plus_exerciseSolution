@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "stdbool.h"
+
+int main(){
+    int n_space,n_linenotation,n_other;
+    n_linenotation=n_other=n_space=0;
+    char ch;
+    while((ch=getchar())!='#'){
+        if(ch==' ')
+            n_space++;
+        else if(ch=='\n')
+            n_linenotation++;
+        else
+            n_other++;
+    }
+}
