@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int isprime(int);
+
+int main(){
+    unsigned int num;
+    printf("enter a unsigned integer:");
+    scanf("%d",&num);
+    for (int i = 1; i <=num; ++i) {
+        if(isprime(i))
+            printf("%d\t",i);
+    }
+
+
+
+
+}
+
+int isprime(int n){
+    for (int j = 2; j*j <= n; ++j) {
+        if(n%j==0)
+            return 0;
+
+
+    }
+    return 1;
+
+}
