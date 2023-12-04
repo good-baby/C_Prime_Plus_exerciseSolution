@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "stdbool.h"
+
+int main(){
+
+    printf("input:");
+
+    char ch,pre_ch;
+    int count=0;
+    pre_ch=getchar();
+
+    while ((ch=getchar())!='#'){
+        if(pre_ch=='e'&&ch=='i')
+            count++;
+        pre_ch=ch;
+
+
+    }
+    printf("%d",count);
+
+
+}
