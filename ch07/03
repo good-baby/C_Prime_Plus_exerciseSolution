@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    int number, evenCount = 0, oddCount = 0;
+    int evenSum = 0, oddSum = 0;
+
+    printf("请输入整数（输入0结束）：\n");
+
+    do {
+        scanf("%d", &number);
+
+        if (number != 0) {
+            if (number % 2 == 0) {
+                evenCount++;
+                evenSum += number;
+            } else {
+                oddCount++;
+                oddSum += number;
+            }
+        }
+    } while (number != 0);
+
+    if (evenCount > 0) {
+        double evenAverage = (double) evenSum / evenCount;
+        printf("偶数个数：%d\n", evenCount);
+        printf("偶数平均值：%.2f\n", evenAverage);
+    } else {
+        printf("没有输入偶数\n");
+    }
+
+    if (oddCount > 0) {
+        double oddAverage = (double) oddSum / oddCount;
+        printf("奇数个数：%d\n", oddCount);
+        printf("奇数平均值：%.2f\n", oddAverage);
+    } else {
+        printf("没有输入奇数\n");
+    }
+
+    return 0;
+}
