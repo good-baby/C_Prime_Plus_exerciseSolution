@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "ctype.h"
+int main(){
+    int upper,lower;
+    upper=lower=0;
+    int ch;
+    while ((ch=getchar())!=EOF){
+        if(islower(ch) )
+            lower++;
+        if(isupper(ch))
+            upper++;
+
+    }
+    printf("lower:%d\n"
+           "upper:%d",lower,upper);
+}
