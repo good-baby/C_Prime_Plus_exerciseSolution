@@ -1,0 +1,7 @@
+void chline(char ch,int i,int j){//
+    for (int k = 0; k < i; ++k) {
+        for (int l = 0; l < j; ++l) {
+            putchar(ch);
+        }
+    }
+}
